@@ -41,7 +41,7 @@ class Treca{
   }
   
   void iscrtaj(){
-    background(0);
+    background(pozadina);
     nacrtajPlocu();
     fill(255);
     rect( 50, 350, 700, 180 );

@@ -3,31 +3,31 @@ class Prva{
   String[] pitanja = {"Tko je ubio roditelje Harry Pottera?",
     "Junak kojeg romana ruskog romantizma\nje suvišni čovjek Pečorin?",
     "Kako se prezivaju kriminalna\nbraća u Dinamu?",
-    "Koji je glumac 1999. i 2000. osvojio\nzlatne globuse bez da je ijednom bio\nnominiran za Oscara?",
+    "Koji je glumac 1999. i 2000. osvojio zlatne globuse\n bez da je ijednom bio nominiran za Oscara?",
     "Glavni grad Nigerije?",
-    "V-2 rakete, Mason-Dixon linija i paranoja\nglavni su motivi romana kojeg\nameričkog književnika?",
+    "V-2 rakete, Mason-Dixon linija i paranoja glavni\nsu motivi romana kojeg američkog književnika?",
     "Ako je površina kruga 4 pi, koliki je\nnjegov promjer?",
-    "U Gospodaru Prstenova misteriozni\ngraničar Strider zapravo je koji nasljednik\nGondorovog trona",
+    "U Gospodaru Prstenova misteriozni graničar Strider\nzapravo je koji nasljednik Gondorovog trona",
     "Koji se muški glas nalazi između basa i tenora?", 
     "Po kojem se naselju uglavnom nazivaju Hrvati s Kosova?", 
-    "Maskirani psihopat Michael Myers glavni je lik kojeg horor serijala?", 
-    "Dok je Dante autor Božanske komedije, Balsac je autor koje komedije?", 
-    "U kojem su agregacijskom stanju propan i butan pri sobnoj temperaturi?", 
-    "Hrvatska pasmina Kraški ovčar danas je poznata kao posavski, što?", 
+    "Maskirani psihopat Michael Myers glavni je lik\nkojeg horor serijala?", 
+    "Dok je Dante autor Božanske komedije, Balsac je\nautor koje komedije?", 
+    "U kojem su agregacijskom stanju propan\ni butan pri sobnoj temperaturi?", 
+    "Hrvatska pasmina Kraški ovčar danas\nje poznata kao posavski, što?", 
     "Što je malo c u glasovitoj formuli E=mc^2?", 
-    "Koja boja nedostaje bijeloj i crnoj da bi se dobila Estonska zastva?", 
-    "Koji je američki glumac glumio u filmovima Peti element, Šesto čulo i 12 majmuna?", 
-    "Iz kojeg su našeg romana likovi kanonika, kumordinara Žorža i mecene?", 
-    "Koja je građevina na Kreti bila dom minotaura iz grčke mitologije?", 
-    "Katedrala kojeg grada se nalazi na naličju novčanice od 100 kuna?", 
+    "Koja boja nedostaje bijeloj i crnoj da\nbi se dobila Estonska zastva?", 
+    "Koji je američki glumac glumio u filmovima\nPeti element, Šesto čulo i 12 majmuna?", 
+    "Iz kojeg su našeg romana likovi kanonika,\nkumordinara Žorža i mecene?", 
+    "Koja je građevina na Kreti bila dom\nminotaura iz grčke mitologije?", 
+    "Katedrala kojeg grada se nalazi na\nnaličju novčanice od 100 kuna?", 
     "Što se dodaje živom vapnu da bi postalo gašeno?", 
-    "Koji je troslovni naziv rožnatih ploča u ustima kitova kojima filtriraju planktone?", 
-    "U čast kojeg su se grčkog boga izvodile lirske pjesme ditirambi?", 
-    "Kojom su valutom Nizozemci plaćali prije uvođenja eura?", 
-    "U kojem se gradu nalazi Europski sud za ljudska prava?", 
-    "Kojim anglizmom nazivamo vrstu malog prijenosnog računala sa zaslonom osjetljivim na dodir?", 
+    "Koji je troslovni naziv rožnatih ploča\nu ustima kitova kojima filtriraju planktone?", 
+    "U čast kojeg su se grčkog boga izvodile\nlirske pjesme ditirambi?", 
+    "Kojom su valutom Nizozemci plaćali\nprije uvođenja eura?", 
+    "U kojem se gradu nalazi Europski sud\nza ljudska prava?", 
+    "Kojim anglizmom nazivamo vrstu malog\nprijenosnog računala sa zaslonom osjetljivim na dodir?", 
     "U kojem crtiću Moe Szyslak stoji iza šanka?", 
-    "U kojoj je američkoj saveznoj državi prvi Disneyjev park?", 
+    "U kojoj je američkoj saveznoj državi\nprvi Disneyjev park?", 
     "Kako nazivamo produžene očnjake u divlje svinje?", 
     "Oblik kojeg slova tvori sustav autocesta u Istri?", 
     "Pisac romana Madame Bovary?", 
@@ -38,7 +38,7 @@ class Prva{
   int i, m=0, vrime = 90000, time = millis();
   boolean q;
   String odgovor = "", feedback = "";
-  int[] iskoristeniIndeksi = new int[30];
+  int[] iskoristeniIndeksi = new int[32];
   int koristenaPitanja = 0;
   
   Prva(){
@@ -55,42 +55,47 @@ class Prva{
       druga = true;
       return;
     }
-    fill(0);
-    rect( 20, 20, 100, 30);
+    
     fill(255);
-    text( str(vrime/1000), 50, 50 );
+    
+    //text( str(vrime/1000), 50, 50 );
     if( millis() > m + 1500 ){
       
       background(pozadina);
-      fill(255);
-      rect(50, 70, 700, 400);
+      
+      textSize(25);
+      text("Trenutni iznos: " + iznos, 50, 80 );
+      text( str(vrime/1000), 690, 80 );
+      
+      textSize(20);
+      fill(255, 126);
+      rect(50, 200, 700, 150);
       rect(50, 480, 700, 50);
-      text( iznos, 700, 50 );
-      text( str(vrime/1000), 50, 50 );
+      
+      //image(vrijeme,10,5);
       fill(0);
       if(!q){
         i = (int)random(32);
         while(koristenaPitanja != 0 && vecIskoristenoPitanje(iskoristeniIndeksi, i))
         {
-          print("tu");
           i = (int)random(32);
         }
         iskoristeniIndeksi[koristenaPitanja] = i;
         koristenaPitanja += 1;
         q = true;
       }
-      text(pitanja[i], 100, 200);
-      text(odgovor, 55, 520);
+      text(pitanja[i], 100, 270);
+      text(odgovor, 100, 513);
       if(feedback != ""){
         println(feedback);
         fill(255);
         //-----------
-        if( feedback != "Tocno!" ) fill(255, 0, 0);
-        else fill(0, 255, 0 );
+        if( feedback != "Točno!" ) fill(178,34,34);
+        else fill(0,81,34);
         rect(50, 480, 700, 50);
-        fill( 255 );
+        fill( tamnoplava );
         //-------------
-        text( feedback, 50, 580 );
+        text(feedback, 100, 513 );
         m = millis();
         feedback = "";
         q = false;
@@ -120,7 +125,7 @@ class Prva{
   
   void provjeriOdgovor(){
     if(odgovori[i].equals(odgovor) == true ){
-      feedback = "Tocno!";
+      feedback = "Točno!";
       iznos += 3500;
     }
     else{

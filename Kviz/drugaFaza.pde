@@ -4,7 +4,7 @@ class Druga{
   }
   
   void iscrtaj(){
-    background(0);
+    background(pozadina);
     fill(255);
     textSize(26);
     text("Cestitamo, osvojili ste " + iznos + " kuna u minuti!" , 10, 100);

@@ -6,7 +6,7 @@ class Biranje{
   }
   
   void iscrtaj(){
-    background(0);
+    background(pozadina);
     if( iznos == 0){
       gornja = 11000;
       donja = -3500;

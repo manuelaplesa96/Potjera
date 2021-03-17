@@ -4,7 +4,7 @@ class Zavrsna{
   }
   
   void iscrtaj(){
-    background(0);
+    background(pozadina);
     textSize(26);
     fill(255);
     text("Potjera", 10, 100);

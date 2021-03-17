@@ -10,6 +10,7 @@ int iznos, pos;
 
 PImage naslovnica;
 PImage pozadina;
+PImage vrijeme;
 color tamnoplava = color(0, 16, 38);
 PFont f;
 
@@ -17,6 +18,7 @@ void setup(){
   size(800,800);
   naslovnica = loadImage("naslovnica.jpeg");
   pozadina = loadImage("pozadina.jpeg");
+  //vrijeme = loadImage("sat.png");
   naslovnica.resize(800,800);
   pozadina.resize(800,800);
   
