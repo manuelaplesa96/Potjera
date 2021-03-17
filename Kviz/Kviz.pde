@@ -1,9 +1,10 @@
-boolean pocetna, prva, druga, izbor, treca;
+boolean pocetna, prva, druga, izbor, treca, zavrsni, win;
 Pocetni pocetni;
 Prva Faza1;
 Druga Faza2;
 Treca Faza3;
 Biranje Izbor;
+Zavrsna Zavrsni;
 int iznos, pos;
 
 void setup(){
@@ -14,11 +15,14 @@ void setup(){
   Faza2 = new Druga();
   Faza3 = new Treca();
   Izbor = new Biranje();
+  Zavrsni = new Zavrsna();
   pocetna = true;
   prva = false;
   druga = false;
   izbor = false;
   treca = false;
+  zavrsni = false;
+  win = false;
 }
 
 void draw(){
