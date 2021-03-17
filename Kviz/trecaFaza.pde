@@ -2,12 +2,40 @@ class Treca{
   String[] pitanja = {"Iz koje su videoigre kriminalci Trevor Phillips, Michael\nDe Santa i Franklin Clinton?",
     "Koja životinja ne trči travnjacima\nprve HNL u dresu Istre 1961?",
     "Koji je jedini hrvatski grad koji ima dva spomenika\nna listi UNESCO-a?",
-    "Vec u samom nazivu kojeg je popularnog zanimanja primjetan utjecaj na druge ljude?", "Cega nema na zastavi Kenije?", "Koliko godina ima Holden Caulfield, glavni lik romana 'Lovac u žitu'?", "Kojim se obrambenim mehanizmom neke životinje u opasnosti pretvaraju da su mrtve?", "Koji je narod sredinom 19. stoljeća 'pokosila' glad uzrokovana bolešću krumpira?", "Što mjerimo ako je rezultat izražen mjernom jedinicom mmHg?", "U kojem su gradu Brazilci osvojili svoj posljednji naslov svjetskih nogometnih prvaka?", "Kojeg je rimskog cara Joaquin Phoenix portretirao u filmu 'Gladijator'?", "Koja je najveća dubina Jadranskog mora?", "Koji je komparativ u naslovu hita Eda Sheerana?", "Koja je mjerna jedinica definirana omjerom kulona i volta?", "Rog Afrike uobičajeno je ime za koji dio tog kontinenta?", "Kako nazivamo izručenje okrivljenika iz jedne države 'u ruke' neke druge države?", "Kojim brojem počinje i završava svaki redak Pascalovog trokuta?", "Koji superheroj živi u stvarnom gradu?", "Koje glazbalo ima puža na svom uskom kraju?", "Koju humorističnu tv-seriju ubrajamo u tzv. mockumentary žanr?", "Koja je knjiga o Harryju Potteru ekranizirana u dva dijela?", "Ime najpoznatije švedske grupe u povijesti može biti i oznaka za kakvu rimu?", "U refrenu 'Tužne priče o selu' Postolar Tripper pita 'Koga? Čega?' i nudi koji odgovor?"};
+    "Vec u samom nazivu kojeg je popularnog zanimanja primjetan utjecaj na druge ljude?", 
+    "Cega nema na zastavi Kenije?", 
+    "Koliko godina ima Holden Caulfield, glavni lik romana 'Lovac u žitu'?", 
+    "Kojim se obrambenim mehanizmom neke životinje u opasnosti pretvaraju da su mrtve?", 
+    "Koji je narod sredinom 19. stoljeća 'pokosila' glad uzrokovana bolešću krumpira?", 
+    "Što mjerimo ako je rezultat izražen mjernom jedinicom mmHg?", 
+    "U kojem su gradu Brazilci osvojili svoj posljednji naslov svjetskih nogometnih prvaka?", 
+    "Kojeg je rimskog cara Joaquin Phoenix portretirao u filmu 'Gladijator'?", 
+    "Koja je najveća dubina Jadranskog mora?", 
+    "Koji je komparativ u naslovu hita Eda Sheerana?", 
+    "Koja je mjerna jedinica definirana omjerom kulona i volta?", 
+    "Rog Afrike uobičajeno je ime za koji dio tog kontinenta?", 
+    "Kako nazivamo izručenje okrivljenika iz jedne države 'u ruke' neke druge države?", 
+    "Kojim brojem počinje i završava svaki redak Pascalovog trokuta?", 
+    "Koji superheroj živi u stvarnom gradu?", 
+    "Koje glazbalo ima puža na svom uskom kraju?", 
+    "Koju humorističnu tv-seriju ubrajamo u tzv. mockumentary žanr?", 
+    "Koja je knjiga o Harryju Potteru ekranizirana u dva dijela?", 
+    "Ime najpoznatije švedske grupe u povijesti može biti i oznaka za kakvu rimu?", 
+    "U refrenu 'Tužne priče o selu' Postolar Tripper pita 'Koga? Čega?' i nudi koji odgovor?"};
   String[][] odgovori = { {"GTA V", "Just Cause 3", "Uncharted 4"}, {"Zec", "Vuk", "Lisica"},
-    {"Šibenik", "Split", "Dubrovnik"},
-    {"influencera", "youtubera", "blogera"}, {"mača", "koplja", "štita"}, {"17", "27", "37"}, {"tanatozom", "erebozom", "morozom"}, {"Irce", "Nijemce", "Šveđane"}, {"tlak", "duljinu", "masu"}, {"u Yokohami", "u Berlinu", "u Passadeni"}, {"Komoda", "Nerona", "Trajana"}, {"1228 m", "3005 m", "947 m"}, {"happier", "better", "sweeter"}, {"farad", "herc", "njutn"}, {"najjistočniji", "najjužniji", "najzapadniji"}, {"ekstradicija", "eksklamacija", "eksproprijacija"}, {"jedan", "dva", "tri"}, {"Batman", "Spider-man", "Superman"}, {"violina", "gitara", "trombon"}, {"U uredu", "Dva i pol muškarca", "Lude 70-te"}, {"Darovi smrti", "Kamen mudraca", "Plameni pehar"}, {"za obgrljenu", "za parnu", "za unakrsnu"}, {"Janjetine!", "Piletine!", "Svinjetine!"}};
+    {"Šibenik", "Split", "Dubrovnik"}, {"influencera", "youtubera", "blogera"}, 
+    {"mača", "koplja", "štita"}, {"17", "27", "37"}, {"tanatozom", "erebozom", "morozom"}, 
+    {"Irce", "Nijemce", "Šveđane"}, {"tlak", "duljinu", "masu"}, {"u Yokohami", "u Berlinu", "u Passadeni"}, 
+    {"Komoda", "Nerona", "Trajana"}, {"1228 m", "3005 m", "947 m"}, {"happier", "better", "sweeter"}, 
+    {"farad", "herc", "njutn"}, {"najjistočniji", "najjužniji", "najzapadniji"}, 
+    {"ekstradicija", "eksklamacija", "eksproprijacija"}, {"jedan", "dva", "tri"}, 
+    {"Batman", "Spider-man", "Superman"}, {"violina", "gitara", "trombon"}, 
+    {"U uredu", "Dva i pol muškarca", "Lude 70-te"}, {"Darovi smrti", "Kamen mudraca", "Plameni pehar"}, 
+    {"za obgrljenu", "za parnu", "za unakrsnu"}, {"Janjetine!", "Piletine!", "Svinjetine!"}};
   int a = -1, b = -1, c = -1, i, igr = -1, lov = -1, lpos = -1;
   boolean q = false, check = false, p = false;
+  int[] iskoristeniIndeksi = new int[30];
+  int koristenaPitanja = 0;
   
   Treca(){
   }
@@ -22,6 +50,10 @@ class Treca{
     rect( 533, 540, 217, 40 );
     if(!q){
       i = (int)random(23);
+      while(koristenaPitanja != 0 && vecIskoristenoPitanje(iskoristeniIndeksi, i))
+        i = (int)random(32);
+      iskoristeniIndeksi[koristenaPitanja] = i;
+      koristenaPitanja += 1;
       q = true;
       while( (a == b && a == c && b == c) || (a==b) || (a == c) || (b==c)){
         a = (int)random(3);
@@ -124,6 +156,15 @@ class Treca{
     if( keyCode == ENTER && lov != -1 && igr != -1 ){
       check = true;
     }
+  }
+  
+  boolean vecIskoristenoPitanje(int[] arr, int val) {
+    for(int i=0; i<arr.length; i++) {
+      if(arr[i]==val) {
+        return true;
+      }
+    }
+    return false;
   }
   
   void nacrtajPlocu(){
