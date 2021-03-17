@@ -25,8 +25,14 @@
 * #### Upute za odgovaranje na pitanja
   * igrač igra na tipkama `a`,`s` i `d` koje redom označavaju odgovor pod a, pod b i pod c
   * lovac igra na tipkama `j`,`k`,`l` koje redom označavaju odgovor pod a, pod b i pod c
-  * nakon što obojica odaberu odgovor potrebno je kliknuti tipku `Enter` kako bi se pokazao točan odgovor
-  * nakon prikazanog odgovora potrebno je kliknuti `Enter` za prikaz idućeg pitanja
+  * nakon što obojica odaberu odgovor potrebno je kliknuti tipku `Enter` 3 puta:
+    * kako bi se pokazao točan odgovor
+    * za pomak potrebne pomake na igraćoj ploči
+    * za prikaz idućeg pitanja
+
+### Nastavak igre
+
+* nakon završetka igre klikom na tipku `Space` moguć je povratak na početnu stranicu te započimanje nove igre
 
 ### TODO:
 
