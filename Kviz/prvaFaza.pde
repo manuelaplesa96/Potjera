@@ -60,7 +60,8 @@ class Prva{
     fill(255);
     text( str(vrime/1000), 50, 50 );
     if( millis() > m + 1500 ){
-      background(0);
+      
+      background(pozadina);
       fill(255);
       rect(50, 70, 700, 400);
       rect(50, 480, 700, 50);

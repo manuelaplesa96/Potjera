@@ -3,16 +3,33 @@ class Pocetni{
   String pitanje;
   boolean q = false;
   
+  
   Pocetni(){
   }
   
   void iscrtaj(){
     if( pocetna ){
-      background(0);
-      fill(255);
-      textSize(26);
-      text("Potjera", 10, 100);
-      text("Pritisnite SPACE za nastavak", 200, 300);
+      background(naslovnica);
+      
+      fill(tamnoplava);
+      textSize(30);
+      text("Za početak potjere\n  pritisnite SPACE", 270, 550);
+     
+      noFill();
+      stroke(tamnoplava);
+      rect(7, 750, 100, 40);
+      textSize(18);
+      text("Pravila", 27, 777);
+      
+      
+      if(mousePressed)
+      {
+        if (mouseX >= 7  && mouseX <= 7 + 100 && mouseY >= 750 && mouseY <= 750 + 40)
+        {
+          pravila = true;
+          pocetna = false;
+        }
+      }
     }
     if( prva ){
       Faza1.iscrtaj();
@@ -28,6 +45,9 @@ class Pocetni{
     }
     if( zavrsni ){
       Zavrsni.iscrtaj(); 
+    }
+    if( pravila ){
+      ispisPravila.iscrtaj(); 
     }
   }
   
