@@ -4,7 +4,7 @@ class Zavrsna{
   }
   
   void iscrtaj(){
-    background(konfeti1);
+    background(konfeti);
     textSize(28);
     fill(255);
     if( win ){

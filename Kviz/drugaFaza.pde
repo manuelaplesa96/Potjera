@@ -4,7 +4,7 @@ class Druga{
   }
   
   void iscrtaj(){
-    background(konfeti1);
+    background(konfeti);
     
     fill(255,126);
     rect(100, 294, 580, 65);

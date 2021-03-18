@@ -11,7 +11,7 @@ int iznos, pos;
 PImage naslovnica;
 PImage pozadina;
 PImage vrijeme;
-PImage konfeti1;
+PImage konfeti;
 PImage voditelj;
 PImage izgubio;
 color tamnoplava = color(0, 16, 38);
@@ -26,14 +26,14 @@ void setup(){
   size(800,800);
   naslovnica = loadImage("naslovnica.jpeg");
   pozadina = loadImage("pozadina.jpeg");
-  konfeti1 = loadImage("konfeti2.jpeg");
+  konfeti = loadImage("konfeti.jpeg");
   vrijeme = loadImage("time1.png");
   voditelj = loadImage("tarik.jpeg");
   izgubio = loadImage("izgubio.jpg");
   
   naslovnica.resize(800,800);
   pozadina.resize(800,800);
-  konfeti1.resize(800,800);
+  konfeti.resize(800,800);
   izgubio.resize(800,800);
   voditelj.resize(800, 800);
   vrijeme.resize(45,43);

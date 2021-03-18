@@ -45,9 +45,9 @@ class Prva{
     "Američka pjevačica Stefani Joanne Angelina Germanotta\nje poznatija kao...?",
     "Ime kojeg djeteta američkog celebrity para daje polovicu\nnaslova trilera Alfreda Hitchcocka iz 1959. godine?",
     "Što Gibonnijeva pjesma odgovara na naslov filma\nSpike Leeja iz 1989. godine?"};
-  String[] odgovori = {"voldemort", "junak naseg doba", "mamic", "jim carrey", "abuja", "thomas pynchon",
-                      "cetiri", "aragorn", "bariton", "janjevo", "noc vjestica", "ljudske", "plinovitom", "gonic", "brzina svjetlosti", "plava", "bruce willis", "u registraturi", "labirint", "rijeke", "voda", "usi", "dioniza", "guldenom", "strasbourg", "tablet", "simpsoni", "kalifornija", "kljove", "y", "gustav flaubert", "trombociti", "bumerang",
-                      "vatikan", "real madrid", "ananas", "corona", "kraljev grudobran", "bob dylan", "david jones", "cristiano ronaldo", "scijentologija", "lady gaga", "north west", "cinim pravu stvar"};
+  String[] odgovori = {"voldemort", "junak našeg doba", "mamić", "jim carrey", "abuja", "thomas pynchon",
+                      "četiri", "aragorn", "bariton", "janjevo", "noć vještica", "ljudske", "plinovitom", "gonič", "brzina svjetlosti", "plava", "bruce willis", "u registraturi", "labirint", "rijeke", "voda", "usi", "dioniza", "guldenom", "strasbourg", "tablet", "simpsoni", "kalifornija", "kljove", "y", "gustav flaubert", "trombociti", "bumerang",
+                      "vatikan", "real madrid", "ananas", "corona", "kraljev grudobran", "bob dylan", "david jones", "cristiano ronaldo", "scijentologija", "lady gaga", "north west", "činim pravu stvar"};
   int i, m=0, vrime = 60000, time = millis();
   boolean q;
   String odgovor = "", feedback = "";
@@ -100,7 +100,6 @@ class Prva{
       text(pitanja[i], 100, 270);
       text(odgovor, 100, 513);
       if(feedback != ""){
-        println(feedback);
         fill(255);
         //-----------
         if( feedback != "Točno!" ) fill(netocno);
