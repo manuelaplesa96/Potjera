@@ -7,7 +7,7 @@ class Prva{
     "Glavni grad Nigerije?",
     "V-2 rakete, Mason-Dixon linija i paranoja glavni\nsu motivi romana kojeg američkog književnika?",
     "Ako je površina kruga 4 pi, koliki je\nnjegov promjer?",
-    "U Gospodaru Prstenova misteriozni graničar Strider\nzapravo je koji nasljednik Gondorovog trona",
+    "U Gospodaru Prstenova misteriozni graničar Strider\nzapravo je koji nasljednik Gondorovog trona?",
     "Koji se muški glas nalazi između basa i tenora?", 
     "Po kojem se naselju uglavnom nazivaju Hrvati s Kosova?", 
     "Maskirani psihopat Michael Myers glavni je lik\nkojeg horor serijala?", 
@@ -32,13 +32,26 @@ class Prva{
     "Oblik kojeg slova tvori sustav autocesta u Istri?", 
     "Pisac romana Madame Bovary?", 
     "Koje krvne čestice sudjeluju u zgrušavanju krvi?", 
-    "Koji je srpoliki predmt bio lovačko oružje aboridžina?"};
+    "Koji je srpoliki predmt bio lovačko oružje aboridžina?",
+    "Koja je najmanja država na svijetu?",
+    "Koja je nogometna ekipa osvojila Ligu Prvaka\nnajviše puta?",
+    "Koje se voće može pronaći na trofeju dobivenom za\nosvajanje Wimbledona?",
+    "Koje meksičko pivo dijeli ime s popularnim virusom?",
+    "Kako se na hrvatskom zove glavni grad Westerosa?",
+    "Tko je jedini glazbenik koji je dobio Nobelovu\nnagradu za književnost?",
+    "Koje je pravo ime Davida Bowieja?",
+    "Koji nogometaš ima najviše Instagram pratitelja?",
+    "Kako se zove religija čiji je član Tom Cruise?",
+    "Američka pjevačica Stefani Joanne Angelina Germanotta\nje poznatija kao...?",
+    "Ime kojeg djeteta američkog celebrity para daje polovicu\nnaslova trilera Alfreda Hitchcocka iz 1959. godine?",
+    "Što Gibonnijeva pjesma odgovara na naslov filma\nSpike Leeja iz 1989. godine?"};
   String[] odgovori = {"voldemort", "junak naseg doba", "mamic", "jim carrey", "abuja", "thomas pynchon",
-                      "cetiri", "aragorn", "bariton", "janjevo", "noc vjestica", "ljudske", "plinovitom", "gonic", "brzina svjetlosti", "plava", "bruce willis", "u registraturi", "labirint", "rijeke", "voda", "usi", "dioniza", "guldenom", "strasbourg", "tablet", "simpsoni", "kalifornija", "kljove", "y", "gustav flaubert", "trombociti", "bumerang"};
-  int i, m=0, vrime = 90000, time = millis();
+                      "cetiri", "aragorn", "bariton", "janjevo", "noc vjestica", "ljudske", "plinovitom", "gonic", "brzina svjetlosti", "plava", "bruce willis", "u registraturi", "labirint", "rijeke", "voda", "usi", "dioniza", "guldenom", "strasbourg", "tablet", "simpsoni", "kalifornija", "kljove", "y", "gustav flaubert", "trombociti", "bumerang",
+                      "vatikan", "real madrid", "ananas", "corona", "kraljev grudobran", "bob dylan", "david jones", "cristiano ronaldo", "scijentologija", "lady gaga", "north west", "cinim pravu stvar"};
+  int i, m=0, vrime = 60000, time = millis();
   boolean q;
   String odgovor = "", feedback = "";
-  int[] iskoristeniIndeksi = new int[32];
+  int[] iskoristeniIndeksi = new int[45];
   int koristenaPitanja = 0;
   
   Prva(){
@@ -75,10 +88,10 @@ class Prva{
       //image(vrijeme,10,5);
       fill(0);
       if(!q){
-        i = (int)random(32);
+        i = (int)random(45);
         while(koristenaPitanja != 0 && vecIskoristenoPitanje(iskoristeniIndeksi, i))
         {
-          i = (int)random(32);
+          i = (int)random(45);
         }
         iskoristeniIndeksi[koristenaPitanja] = i;
         koristenaPitanja += 1;

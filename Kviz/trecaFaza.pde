@@ -21,7 +21,16 @@ class Treca{
     "Koju humorističnu tv-seriju ubrajamo u tzv. mockumentary žanr?", 
     "Koja je knjiga o Harryju Potteru ekranizirana u dva dijela?", 
     "Ime najpoznatije švedske grupe u povijesti može biti i oznaka za kakvu rimu?", 
-    "U refrenu 'Tužne priče o selu' Postolar Tripper pita 'Koga? Čega?' i nudi koji odgovor?"};
+    "U refrenu 'Tužne priče o selu' Postolar Tripper pita 'Koga? Čega?' i nudi koji odgovor?",
+    "Prema Bibliji, Noa je na početku velikog potopa bio vitalan muškarac od koliko godina?",
+    "Koji 'Bilo jednom...' nije režirao Sergio Leone?",
+    "Koje je najveće slatkovodno jezero na svijetu?",
+    "Koja je talijanska riječ za rajčicu?",
+    "Na koji dio pokućstva je skočio Tom Cruise izjavljujući svoju ljubav prema Katie Holmes na Oprah Showu?",
+    "Koja je mjerna jedinica dobila ime po talijanskom plemiću?",
+    "U kojem se gradu nalazi sveučilište Harvrad?",
+    "'Od svih lokala u svim gradovima u cijelom svijetu, ona uđe u moj', je citat iz kojeg filmskog klasika?",
+    "Koje su bile posljednje riječi Charlesa Fostera Kanea?"};
   String[][] odgovori = { {"GTA V", "Just Cause 3", "Uncharted 4"}, {"Zec", "Vuk", "Lisica"},
     {"Šibenik", "Split", "Dubrovnik"}, {"influencera", "youtubera", "blogera"}, 
     {"mača", "koplja", "štita"}, {"17", "27", "37"}, {"tanatozom", "erebozom", "morozom"}, 
@@ -29,12 +38,16 @@ class Treca{
     {"Komoda", "Nerona", "Trajana"}, {"1228 m", "3005 m", "947 m"}, {"happier", "better", "sweeter"}, 
     {"farad", "herc", "njutn"}, {"najjistočniji", "najjužniji", "najzapadniji"}, 
     {"ekstradicija", "eksklamacija", "eksproprijacija"}, {"jedan", "dva", "tri"}, 
-    {"Batman", "Spider-man", "Superman"}, {"violina", "gitara", "trombon"}, 
+    {"Spider-man", "Batman", "Superman"}, {"violina", "gitara", "trombon"}, 
     {"U uredu", "Dva i pol muškarca", "Lude 70-te"}, {"Darovi smrti", "Kamen mudraca", "Plameni pehar"}, 
-    {"za obgrljenu", "za parnu", "za unakrsnu"}, {"Janjetine!", "Piletine!", "Svinjetine!"}};
+    {"za obgrljenu", "za parnu", "za unakrsnu"}, {"Janjetine!", "Piletine!", "Svinjetine!"},
+    {"600", "100", "300"}, {"u Hollywoodu", "u Americi", "na divljem zapadu"},
+    {"Superior", "Michigan", "Huron"}, {"Pomodoro", "Cipolla", "Peperoncino"},
+    {"Kauč", "Stolicu", "Stol"}, {"Volt", "Pascal", "Ohm"}, {"Cambridge", "New York", "Providence"},
+    {"Casablanca", "Građanin Kane", "Divan Život"}, {"Rosebud", "Snow globe", "Xanadu"}};
   int a = -1, b = -1, c = -1, i, igr = -1, lov = -1, lpos = -1;
   boolean q = false, check = false, p = false;
-  int[] iskoristeniIndeksi = new int[30];
+  int[] iskoristeniIndeksi = new int[32];
   int koristenaPitanja = 0;
   
   Treca(){
@@ -49,7 +62,7 @@ class Treca{
     rect( 292, 540, 216, 40 );
     rect( 533, 540, 217, 40 );
     if(!q){
-      i = (int)random(23);
+      i = (int)random(32);
       while(koristenaPitanja != 0 && vecIskoristenoPitanje(iskoristeniIndeksi, i))
         i = (int)random(32);
       iskoristeniIndeksi[koristenaPitanja] = i;

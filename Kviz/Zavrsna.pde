@@ -18,9 +18,13 @@ class Zavrsna{
     pos = 1;
     iznos = 0;
     Faza1.m = 0;
-    Faza1.vrime = 90000;
+    Faza1.vrime = 60000;
     Faza1.odgovor = "";
     Faza1.feedback = "";
+    Faza1.iskoristeniIndeksi = new int[45];
+    Faza1.koristenaPitanja = 0;
+    Faza3.iskoristeniIndeksi = new int[32];
+    Faza3.koristenaPitanja = 0;
     zavrsni = false;
     pocetna = true;
   }
