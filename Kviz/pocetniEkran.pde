@@ -13,7 +13,10 @@ class Pocetni{
       
       fill(tamnoplava);
       textSize(30);
-      text("Za početak potjere\n  pritisnite SPACE", 270, 550);
+      text("Za početak potjere\n  pritisnite", 270, 550);
+      textFont(spaceFont);
+      text("SPACE", 417, 595);
+      textFont(f);
      
       noFill();
       stroke(tamnoplava);

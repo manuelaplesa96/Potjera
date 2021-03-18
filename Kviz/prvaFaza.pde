@@ -78,7 +78,8 @@ class Prva{
       
       textSize(25);
       text("Trenutni iznos: " + iznos, 50, 80 );
-      text( str(vrime/1000), 690, 80 );
+      text( str(vrime/1000), 695, 78 );
+      image(vrijeme, 650, 47);
       
       textSize(20);
       fill(255, 126);

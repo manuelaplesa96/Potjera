@@ -15,22 +15,25 @@ class Biranje{
       gornja = iznos * 4;
       donja = iznos / 2;
     }
-    fill(167);
+    fill(255, 126);
     for( int i = 0; i < 7; i++ )
-      rect( 50, 50 + i * 75, 700, 75 );
+      rect( 50+30*i, 50 + i * 75, 700-60*i, 75 );
     fill(255);
-    rect( 50, 125, 700, 75 );
-    rect( 50, 200, 700, 75 );
-    rect( 50, 275, 700, 75 );
-    fill(204, 102, 0);
-    if( pos == 0 ) rect( 50, 125, 700, 75 );
-    if( pos == 1 ) rect( 50, 200, 700, 75 );
-    if( pos == 2 ) rect( 50, 275, 700, 75 );
+    rect( 50+30, 125, 700-60, 75 );
+    rect( 50+30*2, 200, 700-60*2, 75 );
+    rect( 50+30*3, 275, 700-60*3, 75 );
+    
     fill( 0 );
     textSize( 45 );
-    text( gornja, 300, 185 );
-    text( iznos, 300, 260 );
-    text( donja, 300, 335 );
+    text( gornja, 330, 185 );
+    text( iznos, 330, 260 );
+    text( donja, 330, 335 );
+    
+    fill(plava);
+    if( pos == 0 ) {rect( 50+30, 125, 700-60, 75 ); fill(255);text( gornja, 330, 185 );}
+    if( pos == 1 ) {rect( 50+30*2, 200, 700-60*2, 75 ); fill(255); text( iznos, 330, 260 );}
+    if( pos == 2 ) {rect( 50+30*3, 275, 700-60*3, 75 ); fill(255); text( donja, 330, 335 );}
+  
   }
   
   void provjeriBotun( int key ){

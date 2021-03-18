@@ -4,10 +4,16 @@ class Druga{
   }
   
   void iscrtaj(){
-    background(pozadina);
+    background(konfeti1);
+    
+    fill(255,126);
+    rect(100, 294, 580, 65);
+    fill(tamnoplava);
+    textSize(28);
+    text("Čestitamo, osvojili ste " + iznos + " kuna u minuti!" , 120, 340);
+    
     fill(255);
-    textSize(26);
-    text("Cestitamo, osvojili ste " + iznos + " kuna u minuti!" , 10, 100);
-    text("Pritisnite SPACE ako ste spremni za igru na ploci.", 10, 200 );
+    textSize(20);
+    text("Pritisnite SPACE ako ste spremni za igru na ploči.", 170, 450 );
   }
 }
