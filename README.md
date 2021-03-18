@@ -21,6 +21,7 @@
 * ako igrač ili lovac odgovori točno, pomiče se jedno polje bliže kraju igre
 * ako odgovore krivo ostaju na polju na kojem se nalaze
 * kraj igre je kada igrač dođe do kraja igrače ploče i tako osvoji odabrani iznos ili kada lovac dode na polje na kojem je igrač čime igrač gubi odabrani iznos
+* nakon što pozadina pozeleni ili po crveni (ovisno o ishodu igre) potrebno je kliknuti `Enter` kako bi dobili odgovarajuću poruku
 
 * #### Upute za odgovaranje na pitanja
   * igrač igra na tipkama `a`,`s` i `d` koje redom označavaju odgovor pod a, pod b i pod c
