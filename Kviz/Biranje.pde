@@ -29,7 +29,7 @@ class Biranje{
     text( iznos, 330, 260 );
     text( donja, 330, 335 );
     
-    fill(plava);
+    fill(0,51,103);
     if( pos == 0 ) {rect( 50+30, 125, 700-60, 75 ); fill(255);text( gornja, 330, 185 );}
     if( pos == 1 ) {rect( 50+30*2, 200, 700-60*2, 75 ); fill(255); text( iznos, 330, 260 );}
     if( pos == 2 ) {rect( 50+30*3, 275, 700-60*3, 75 ); fill(255); text( donja, 330, 335 );}

@@ -18,7 +18,7 @@ class Zavrsna{
     else{
       background(izgubio);
       fill(255,126);
-      rect(220, 310, 400, 100);
+      rect(200, 310, 400, 100);
       fill(tamnoplava);
       textSize(28);
       text( "Dobra igra na ploči,ali\n    ipak ste ulovljeni.", 260, 350);

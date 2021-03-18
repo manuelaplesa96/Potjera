@@ -39,7 +39,7 @@ class Treca{
     {"farad", "herc", "njutn"}, {"najjistočniji", "najjužniji", "najzapadniji"}, 
     {"ekstradicija", "eksklamacija", "eksproprijacija"}, {"jedan", "dva", "tri"}, 
     {"Spider-man", "Batman", "Superman"}, {"violina", "gitara", "trombon"}, 
-    {"U uredu", "Dva i pol muškarca", "Lude 70-te"}, {"Darovi smrti", "Kamen mudraca", "Plameni pehar"}, 
+    {"U uredu", "Face", "Lude 70-te"}, {"Darovi smrti", "Kamen mudraca", "Plameni pehar"}, 
     {"za obgrljenu", "za parnu", "za unakrsnu"}, {"Janjetine!", "Piletine!", "Svinjetine!"},
     {"600", "100", "300"}, {"u Hollywoodu", "u Americi", "na divljem zapadu"},
     {"Superior", "Michigan", "Huron"}, {"Pomodoro", "Cipolla", "Peperoncino"},
@@ -54,9 +54,8 @@ class Treca{
   }
   
   void iscrtaj(){
-    background(pozadina);
+    background(voditelj);
     nacrtajPlocu();
-    image(voditelj, 650, 0);
     fill(255, 126);
     rect( 50, 400, 700, 180 );
     rect( 50, 610, 217, 40 );
@@ -183,8 +182,8 @@ class Treca{
   }
   
   void nacrtajPlocu(){
-    if( lpos == pos ) background(127, 0, 0);
-    if( pos == 7 ) background( 0, 127, 0 );
+    if( lpos == pos ) background(netocno);
+    if( pos == 7 ) background(tocno);
     for( int i = 0; i < 7; i++ ){
       fill( 167, 126 );
       rect( 180+10*i, i * 50, 420-20*i,  50 );

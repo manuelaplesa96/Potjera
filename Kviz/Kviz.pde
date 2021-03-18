@@ -21,26 +21,24 @@ color igrac = color(0, 108, 196);
 color netocno = color(178,34,34);
 color tocno = color(0,81,34);
 PFont f;
-PFont spaceFont;
 
 void setup(){
   size(800,800);
   naslovnica = loadImage("naslovnica.jpeg");
   pozadina = loadImage("pozadina.jpeg");
-  konfeti1 = loadImage("konfeti1.jpeg");
+  konfeti1 = loadImage("konfeti2.jpeg");
   vrijeme = loadImage("time1.png");
-  voditelj = loadImage("voditelj.jpg");
+  voditelj = loadImage("tarik.jpeg");
   izgubio = loadImage("izgubio.jpg");
   
   naslovnica.resize(800,800);
   pozadina.resize(800,800);
   konfeti1.resize(800,800);
   izgubio.resize(800,800);
-  voditelj.resize(150, 250);
+  voditelj.resize(800, 800);
   vrijeme.resize(45,43);
   
   f = createFont("Georgia",16,true);
-  spaceFont = createFont("Candara Light Bold",25,true);
   textFont(f);
   
   pos = 1;
@@ -51,10 +49,10 @@ void setup(){
   Izbor = new Biranje();
   Zavrsni = new Zavrsna();
   ispisPravila = new Pravila();
-  pocetna = true;
+  pocetna = false;
   prva = false;
   druga = false;
-  izbor = false;
+  izbor = true;
   treca = false;
   zavrsni = false;
   win = false;
