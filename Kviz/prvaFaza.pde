@@ -2,7 +2,6 @@ class Prva{
   
   String[] pitanja = {"Tko je ubio roditelje Harry Pottera?",
     "Junak kojeg romana ruskog romantizma\nje suvišni čovjek Pečorin?",
-    "Kako se prezivaju kriminalna\nbraća u Dinamu?",
     "Koji je glumac 1999. i 2000. osvojio zlatne globuse\n bez da je ijednom bio nominiran za Oscara?",
     "Glavni grad Nigerije?",
     "V-2 rakete, Mason-Dixon linija i paranoja glavni\nsu motivi romana kojeg američkog književnika?",
@@ -44,10 +43,11 @@ class Prva{
     "Kako se zove religija čiji je član Tom Cruise?",
     "Američka pjevačica Stefani Joanne Angelina Germanotta\nje poznatija kao...?",
     "Ime kojeg djeteta američkog celebrity para daje polovicu\nnaslova trilera Alfreda Hitchcocka iz 1959. godine?",
-    "Što Gibonnijeva pjesma odgovara na naslov filma\nSpike Leeja iz 1989. godine?"};
-  String[] odgovori = {"voldemort", "junak našeg doba", "mamić", "jim carrey", "abuja", "thomas pynchon",
-                      "četiri", "aragorn", "bariton", "janjevo", "noć vještica", "ljudske", "plinovitom", "gonič", "brzina svjetlosti", "plava", "bruce willis", "u registraturi", "labirint", "rijeke", "voda", "usi", "dioniza", "guldenom", "strasbourg", "tablet", "simpsoni", "kalifornija", "kljove", "y", "gustav flaubert", "trombociti", "bumerang",
-                      "vatikan", "real madrid", "ananas", "corona", "kraljev grudobran", "bob dylan", "david jones", "cristiano ronaldo", "scijentologija", "lady gaga", "north west", "činim pravu stvar"};
+    "Što Gibonnijeva pjesma odgovara na naslov filma\nSpike Leeja iz 1989. godine?",
+    "Tko je vodio NK Zagreb kad su 2002. godine\nšokantno osvojili naslov prvaka prve HNL?"};
+  String[] odgovori = {"Voldemort", "Junak našeg doba", "Jim Carrey", "Abuja", "Thomas Pynchon",
+                      "Četiri", "Aragorn", "Bariton", "Janjevo", "Noć vještica", "Ljudske", "Plinovitom", "Gonič", "Brzina svjetlosti", "Plava", "Bruce Willis", "U registraturi", "Labirint", "Rijeke", "Voda", "Usi", "Dioniza", "Guldenom", "Strasbourg", "Tablet", "Simpsoni", "Kalifornija", "Kljove", "Y", "Gustav Flaubert", "Trombociti", "Bumerang",
+                      "Vatikan", "Real Madrid", "Ananas", "Corona", "Kraljev Grudobran", "Bob Dylan", "David Jones", "Cristiano Ronaldo", "Scijentologija", "Lady Gaga", "North West", "Činim pravu stvar", "Cico Kranjčar"};
   int i, m=0, vrime = 60000, time = millis();
   boolean q;
   String odgovor = "", feedback = "";
@@ -129,14 +129,17 @@ class Prva{
       provjeriOdgovor();
       odgovor = "";
     }
-    else if( key == BACKSPACE) odgovor = odgovor.substring( 0, odgovor.length()-1 );
-    else{
+    else if( key == BACKSPACE){
+      if( odgovor.length() > 0 )
+        odgovor = odgovor.substring( 0, odgovor.length()-1 );
+      }
+    else if( (key >= 'a' && key <= 'z') || (key>='A' && key<='Z') ||key==' ' || key=='Š' || key=='Ž' || key=='Č' || key=='Ć' || key=='Đ' || key=='č' || key=='ć' || key=='š' || key=='đ' || key=='ž'){
       odgovor += char(key);
     }
   }
   
   void provjeriOdgovor(){
-    if(odgovori[i].equals(odgovor) == true ){
+    if((odgovori[i].toLowerCase()).equals(odgovor.toLowerCase()) == true ){
       feedback = "Točno!";
       iznos += 3500;
     }

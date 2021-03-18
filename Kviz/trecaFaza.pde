@@ -182,8 +182,20 @@ class Treca{
   }
   
   void nacrtajPlocu(){
-    if( lpos == pos ) background(netocno);
-    if( pos == 7 ) background(tocno);
+    if( lpos == pos ){
+      //background(netocno);
+      fill( netocno );
+      for( int i = 0; i < 7; i++ )
+        rect( 180+10*i, i * 50, 420-20*i,  50 );
+      return;
+    }
+    if( pos == 7 ){
+      //background(tocno);
+      fill( tocno );
+      for( int i = 0; i < 7; i++ )
+        rect( 180+10*i, i * 50, 420-20*i,  50 );
+      return;
+    }
     for( int i = 0; i < 7; i++ ){
       fill( 167, 126 );
       rect( 180+10*i, i * 50, 420-20*i,  50 );
