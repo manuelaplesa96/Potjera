@@ -49,10 +49,10 @@ void setup(){
   Izbor = new Biranje();
   Zavrsni = new Zavrsna();
   ispisPravila = new Pravila();
-  pocetna = false;
+  pocetna = true;
   prva = false;
   druga = false;
-  izbor = true;
+  izbor = false;
   treca = false;
   zavrsni = false;
   win = false;
