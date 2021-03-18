@@ -99,9 +99,9 @@ class Treca{
       text( "Igrač", 90, 390);
       text( "Lovac", 640, 390 );
       fill(igrac);
-      if( igr == a ) rect( 50, 610, 35, 40 );
-      if( igr == b ) rect( 292, 610, 35, 40 );
-      if( igr == c ) rect( 533, 610, 35, 40 );
+      if( igr == a ) rect( 50, 610, 217, 40 );
+      if( igr == b ) rect( 292, 610, 217, 40 );
+      if( igr == c ) rect( 533, 610, 217, 40 );
       if( check ){
         fill(tocno);
         if( 0 == a ) rect( 50, 610, 217, 40 );
