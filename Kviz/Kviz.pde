@@ -12,8 +12,14 @@ PImage naslovnica;
 PImage pozadina;
 PImage vrijeme;
 PImage konfeti1;
+PImage voditelj;
+PImage izgubio;
 color tamnoplava = color(0, 16, 38);
 color plava = color(51, 89, 204);
+color lovac = color(165, 0, 0);
+color igrac = color(0, 108, 196);
+color netocno = color(178,34,34);
+color tocno = color(0,81,34);
 PFont f;
 PFont spaceFont;
 
@@ -23,10 +29,14 @@ void setup(){
   pozadina = loadImage("pozadina.jpeg");
   konfeti1 = loadImage("konfeti1.jpeg");
   vrijeme = loadImage("time1.png");
+  voditelj = loadImage("voditelj.jpg");
+  izgubio = loadImage("izgubio.jpg");
   
   naslovnica.resize(800,800);
   pozadina.resize(800,800);
   konfeti1.resize(800,800);
+  izgubio.resize(800,800);
+  voditelj.resize(150, 250);
   vrijeme.resize(45,43);
   
   f = createFont("Georgia",16,true);

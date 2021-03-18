@@ -16,12 +16,12 @@ class Zavrsna{
       text("Osvojili ste " + iznos + " kuna.", 250, 380);
     }
     else{
-      background(tamnoplava);
+      background(izgubio);
       fill(255,126);
-      rect(150, 310, 533, 63);
+      rect(220, 310, 400, 100);
       fill(tamnoplava);
       textSize(28);
-      text( "Dobra igra na ploči, ali ipak ste ulovljeni.", 170, 350);
+      text( "Dobra igra na ploči,ali\n    ipak ste ulovljeni.", 260, 350);
     }
     
     fill(255);

@@ -86,7 +86,6 @@ class Prva{
       rect(50, 200, 700, 150);
       rect(50, 480, 700, 50);
       
-      //image(vrijeme,10,5);
       fill(0);
       if(!q){
         i = (int)random(45);
@@ -104,8 +103,8 @@ class Prva{
         println(feedback);
         fill(255);
         //-----------
-        if( feedback != "Točno!" ) fill(178,34,34);
-        else fill(0,81,34);
+        if( feedback != "Točno!" ) fill(netocno);
+        else fill(tocno);
         rect(50, 480, 700, 50);
         fill( tamnoplava );
         //-------------

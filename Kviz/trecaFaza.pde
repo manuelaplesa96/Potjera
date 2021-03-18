@@ -1,36 +1,36 @@
 class Treca{
-  String[] pitanja = {"Iz koje su videoigre kriminalci Trevor Phillips, Michael\nDe Santa i Franklin Clinton?",
+  String[] pitanja = {"Iz koje su videoigre kriminalci Trevor Phillips,\nMichaelDe Santa i Franklin Clinton?",
     "Koja životinja ne trči travnjacima\nprve HNL u dresu Istre 1961?",
     "Koji je jedini hrvatski grad koji ima dva spomenika\nna listi UNESCO-a?",
-    "Vec u samom nazivu kojeg je popularnog zanimanja primjetan utjecaj na druge ljude?", 
+    "Vec u samom nazivu kojeg je popularnog zanimanja\nprimjetan utjecaj na druge ljude?", 
     "Cega nema na zastavi Kenije?", 
-    "Koliko godina ima Holden Caulfield, glavni lik romana 'Lovac u žitu'?", 
-    "Kojim se obrambenim mehanizmom neke životinje u opasnosti pretvaraju da su mrtve?", 
-    "Koji je narod sredinom 19. stoljeća 'pokosila' glad uzrokovana bolešću krumpira?", 
-    "Što mjerimo ako je rezultat izražen mjernom jedinicom mmHg?", 
-    "U kojem su gradu Brazilci osvojili svoj posljednji naslov svjetskih nogometnih prvaka?", 
-    "Kojeg je rimskog cara Joaquin Phoenix portretirao u filmu 'Gladijator'?", 
+    "Koliko godina ima Holden Caulfield, glavni lik\nromana 'Lovac u žitu'?", 
+    "Kojim se obrambenim mehanizmom neke životinje\nu opasnosti pretvaraju da su mrtve?", 
+    "Koji je narod sredinom 19. stoljeća 'pokosila'\nglad uzrokovana bolešću krumpira?", 
+    "Što mjerimo ako je rezultat izražen\nmjernom jedinicom mmHg?", 
+    "U kojem su gradu Brazilci osvojili svoj\nposljednji naslov svjetskih nogometnih prvaka?", 
+    "Kojeg je rimskog cara Joaquin Phoenix\nportretirao u filmu 'Gladijator'?", 
     "Koja je najveća dubina Jadranskog mora?", 
-    "Koji je komparativ u naslovu hita Eda Sheerana?", 
-    "Koja je mjerna jedinica definirana omjerom kulona i volta?", 
-    "Rog Afrike uobičajeno je ime za koji dio tog kontinenta?", 
-    "Kako nazivamo izručenje okrivljenika iz jedne države 'u ruke' neke druge države?", 
-    "Kojim brojem počinje i završava svaki redak Pascalovog trokuta?", 
+    "Koji je komparativ u naslovu hita\nEda Sheerana?", 
+    "Koja je mjerna jedinica definirana\nomjerom kulona i volta?", 
+    "Rog Afrike uobičajeno je ime za koji\ndio tog kontinenta?", 
+    "Kako nazivamo izručenje okrivljenika iz\njedne države 'u ruke' neke druge države?", 
+    "Kojim brojem počinje i završava svaki redak\nPascalovog trokuta?", 
     "Koji superheroj živi u stvarnom gradu?", 
     "Koje glazbalo ima puža na svom uskom kraju?", 
-    "Koju humorističnu tv-seriju ubrajamo u tzv. mockumentary žanr?", 
-    "Koja je knjiga o Harryju Potteru ekranizirana u dva dijela?", 
-    "Ime najpoznatije švedske grupe u povijesti može biti i oznaka za kakvu rimu?", 
-    "U refrenu 'Tužne priče o selu' Postolar Tripper pita 'Koga? Čega?' i nudi koji odgovor?",
-    "Prema Bibliji, Noa je na početku velikog potopa bio vitalan muškarac od koliko godina?",
+    "Koju humorističnu tv-seriju ubrajamo u\ntzv. mockumentary žanr?", 
+    "Koja je knjiga o Harryju Potteru\nekranizirana u dva dijela?", 
+    "Ime najpoznatije švedske grupe u povijesti\nmože biti i oznaka za kakvu rimu?", 
+    "U refrenu 'Tužne priče o selu' Postolar\nTripper pita 'Koga? Čega?' i nudi koji odgovor?",
+    "Prema Bibliji, Noa je na početku\nvelikog potopa bio vitalan\nmuškarac od koliko godina?",
     "Koji 'Bilo jednom...' nije režirao Sergio Leone?",
     "Koje je najveće slatkovodno jezero na svijetu?",
     "Koja je talijanska riječ za rajčicu?",
-    "Na koji dio pokućstva je skočio Tom Cruise izjavljujući svoju ljubav prema Katie Holmes na Oprah Showu?",
-    "Koja je mjerna jedinica dobila ime po talijanskom plemiću?",
+    "Na koji dio pokućstva je skočio Tom Cruise\nizjavljujući svoju ljubav prema\nKatie Holmes na Oprah Showu?",
+    "Koja je mjerna jedinica dobila\nime po talijanskom plemiću?",
     "U kojem se gradu nalazi sveučilište Harvrad?",
-    "'Od svih lokala u svim gradovima u cijelom svijetu, ona uđe u moj', je citat iz kojeg filmskog klasika?",
-    "Koje su bile posljednje riječi Charlesa Fostera Kanea?"};
+    "'Od svih lokala u svim gradovima u cijelom\nsvijetu, ona uđe u moj', je citat iz\nkojeg filmskog klasika?",
+    "Koje su bile posljednje riječi Charlesa\nFostera Kanea?"};
   String[][] odgovori = { {"GTA V", "Just Cause 3", "Uncharted 4"}, {"Zec", "Vuk", "Lisica"},
     {"Šibenik", "Split", "Dubrovnik"}, {"influencera", "youtubera", "blogera"}, 
     {"mača", "koplja", "štita"}, {"17", "27", "37"}, {"tanatozom", "erebozom", "morozom"}, 
@@ -56,11 +56,12 @@ class Treca{
   void iscrtaj(){
     background(pozadina);
     nacrtajPlocu();
-    fill(255);
-    rect( 50, 350, 700, 180 );
-    rect( 50, 540, 217, 40 );
-    rect( 292, 540, 216, 40 );
-    rect( 533, 540, 217, 40 );
+    image(voditelj, 650, 0);
+    fill(255, 126);
+    rect( 50, 400, 700, 180 );
+    rect( 50, 610, 217, 40 );
+    rect( 292, 610, 217, 40 );
+    rect( 533, 610, 217, 40 );
     if(!q){
       i = (int)random(32);
       while(koristenaPitanja != 0 && vecIskoristenoPitanje(iskoristeniIndeksi, i))
@@ -76,46 +77,47 @@ class Treca{
     }
     fill(0);
     textSize(24);
-    text( pitanja[i], 70, 400 );
+    text( pitanja[i], 70, 460 );
     if( igr != -1 && lov == -1 ){
-      fill( 255, 0, 0);
-      rect( 50, 310, 150, 40 );
+      fill(igrac);
+      rect( 50, 360, 150, 40 );
       fill(255);
-      text( "Igrac", 55, 340);
+      text( "Igrač", 90, 390);
     }
     else if( igr == -1 && lov != -1 ){
-      fill( 255, 0, 0);
-      rect( 600, 310, 150, 40 );
+      fill(lovac);
+      rect( 600, 360, 150, 40 );
       fill(255);
-      text( "Lovac", 605, 340 );
+      text( "Lovac", 640, 390 );
     }
     else if( igr != -1 && lov != -1 ){
-      fill( 255, 0, 0);
-      rect( 600, 310, 150, 40 );
-      rect( 50, 310, 150, 40 );
+      fill(igrac);
+      rect( 50, 360, 150, 40 );
+      fill(lovac);
+      rect( 600, 360, 150, 40 );
       fill(255);
-      text( "Igrač", 55, 340);
-      text( "Lovac", 605, 340 );
-      fill(0,0,255);
-      if( igr == a ) rect( 50, 540, 217, 40 );
-      if( igr == b ) rect( 292, 540, 216, 40 );
-      if( igr == c ) rect( 533, 540, 217, 40 );
+      text( "Igrač", 90, 390);
+      text( "Lovac", 640, 390 );
+      fill(igrac);
+      if( igr == a ) rect( 50, 610, 35, 40 );
+      if( igr == b ) rect( 292, 610, 35, 40 );
+      if( igr == c ) rect( 533, 610, 35, 40 );
       if( check ){
-        fill( 0, 255, 0 );
-        if( 0 == a ) rect( 50, 540, 217, 40 );
-        if( 0 == b ) rect( 292, 540, 216, 40 );
-        if( 0 == c ) rect( 533, 540, 217, 40 );
+        fill(tocno);
+        if( 0 == a ) rect( 50, 610, 217, 40 );
+        if( 0 == b ) rect( 292, 610, 217, 40 );
+        if( 0 == c ) rect( 533, 610, 217, 40 );
       }
-      fill( 255, 0, 0 );
-      if( lov == a ) rect( 50, 540, 35, 40 );
-      if( lov == b ) rect( 292, 540, 35, 40 );
-      if( lov == c ) rect( 533, 540, 35, 40 );
+      fill(lovac);
+      if( lov == a ) rect( 50, 610, 35, 40 );
+      if( lov == b ) rect( 292, 610, 35, 40 );
+      if( lov == c ) rect( 533, 610, 35, 40 );
     }
     fill(0);
     textSize(22);
-    text( "A: " + odgovori[i][a], 60, 570);
-    text( "B: " + odgovori[i][b], 302, 570 );
-    text( "C: " + odgovori[i][c], 543, 570 );
+    text( "A: " + odgovori[i][a], 60, 640);
+    text( "B: " + odgovori[i][b], 302, 640 );
+    text( "C: " + odgovori[i][c], 543, 640 );
   }
   
   void provjeriBotun( int key ){
@@ -184,25 +186,25 @@ class Treca{
     if( lpos == pos ) background(127, 0, 0);
     if( pos == 7 ) background( 0, 127, 0 );
     for( int i = 0; i < 7; i++ ){
-      fill( 167 );
-      rect( 200, i * 50, 400,  50 );
+      fill( 167, 126 );
+      rect( 180+10*i, i * 50, 420-20*i,  50 );
     }
     for( int i = 0; i <= lpos; i++ ){
-      fill( 255, 0, 0 );
-      rect( 200, i * 50, 400,  50 );
+      fill( 204, 0, 0 );
+      rect( 180+10*i, i * 50, 420-20*i,  50 );
     }
     for( int i = lpos + 1; i <= pos; i++ ){
-      fill( 0, 0, 255 );
-      rect( 200, i * 50, 400,  50 );
+      fill( 0, 51, 153 );
+      rect( 180+10*i, i * 50, 420-20*i,  50 );
     }
     fill(255);
     textSize(26);
     if( lpos != pos ){
-      text(iznos, 355, pos * 50 + 35);
-      triangle( 210, pos*50+10, 210, pos*50+40, 230, pos*50+25 );
-      triangle( 590, pos*50+10, 590, pos*50+40, 570, pos*50+25 );
+      text(iznos, 350, pos * 50 + 35);
+      triangle( 180+10*pos, pos*50+10, 180+10*pos, pos*50+40, 200+10*pos, pos*50+25 );
+      triangle( 600-10*pos, pos*50+10, 600-10*pos, pos*50+40, 580-10*pos, pos*50+25 );
     }
     fill(0);
-    if( lpos != -1 ) triangle( 250, lpos*50+10, 550, lpos*50+10, 400, lpos*50+40 );
+    if( lpos != -1 ) triangle( 190+10*pos, lpos*50+10, 590-10*pos, lpos*50+10, 400, lpos*50+40 );
   }
 }
