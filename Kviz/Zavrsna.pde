@@ -9,11 +9,11 @@ class Zavrsna{
     fill(255);
     if( win ){
       fill(255,126);
-      rect(190, 280, 400, 150);
+      rect(200, 310, 445, 100);
       fill(tamnoplava);
       textSize(28);
-      text("Čestitamo!", 300, 340); 
-      text("Osvojili ste " + iznos + " kuna.", 250, 380);
+      text("Čestitamo!", 300, 345); 
+      text("Osvojili ste " + iznos + " kuna.", 250, 385);
     }
     else{
       background(izgubio);
