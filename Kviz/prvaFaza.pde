@@ -76,10 +76,21 @@ class Prva{
       
       background(pozadina);
       
+      rect(600, 100, 120, 30);
+      
       textSize(25);
       text("Trenutni iznos: " + iznos, 50, 80 );
       text( str(vrime/1000), 695, 78 );
       image(vrijeme, 650, 47);
+      
+      if( vrime/1000 < 20 && vrime/1000 > 10)
+        fill(255, 117, 26);
+      else if ( vrime/1000 <= 10)
+        fill(204, 0, 0);
+      else 
+        fill(plava);
+      rect(600, 100, (vrime/1000) * 2, 30);
+      
       
       textSize(20);
       fill(255, 126);
