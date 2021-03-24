@@ -39,3 +39,8 @@
 
 * navesti više pitanja kako se ne bi često ponavljala ista pitanja (nama je cilj bila funkcionalnost cijele igre)
 * uvesti odabir lovaca
+* uvesti da se pitanja ucitavaju iz datoteke ne izravno iz koda
+* uvesti vise tocnih odgovora u prvoj fazi igre (u razlicitim padezima, numericki ili rijecima)
+
+### Napomena:
+* uvesti konstante za neke cesto koristene koordinate unutar koda
